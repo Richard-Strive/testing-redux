@@ -1,5 +1,7 @@
-import logo from "./logo.svg";
 import { connect } from "react-redux";
+import { Icon, InlineIcon } from "@iconify/react";
+import reduxIcon from "@iconify-icons/simple-icons/redux";
+
 import "./App.css";
 
 // Nella mia componente vengo a connettere ed utlizzare, se e' necessario, le "parole magiche" dentro il mio file reducer
@@ -25,19 +27,12 @@ function App({ increment, decrement, count }) {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>{count}</p>
+        <h1>REDUX TESTING</h1>
+        <Icon icon={reduxIcon} className="redux_app" />
+        <button onClick={increment} style={{ marginTop: "0px" }}>
+          CLICK ME AND SEE
+        </button>
+        <p className="counter">{count}</p>
       </header>
     </div>
   );

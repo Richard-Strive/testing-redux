@@ -2,19 +2,31 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.redux_app {
+  height: 50vmin;
+  margin-bottom: 10%;
+  margin-top: 4%;
+  font-size: 20rem;
   pointer-events: none;
 }
 
+button {
+  height: 80px;
+  width: 80px;
+}
+.counter {
+  margin-top: 0px;
+  font-size: 90px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .redux_app {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #764abc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
